@@ -4,10 +4,10 @@ const PatientController = require('./controllers/PatientController');
 
 const routes = new Router();
 
-routes.post('/patients', PatientController.store);
-routes.put('/patients/:patientsId', PatientController.update);
-routes.get('/patients', PatientController.getAll);
-routes.get('/patients/:patientsId', PatientController.getPatientById);
-routes.delete('/patients/:patientsId', PatientController.delete);
+routes.post('/api/patients', PatientController.store);
+routes.put('/api/patients/:patientsId', PatientController.update);
+routes.get('/api/patients', PatientController.getAll);
+routes.get('/api/patients/:patientsId', PatientController.getPatientById);
+routes.delete('/api/patients/:patientsId', PatientController.delete);
 
 module.exports = routes;

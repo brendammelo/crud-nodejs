@@ -20,12 +20,12 @@ class PatientController {
 
         const patient = await Patient.create(req.body);
 
-        return res.json(patient);
+        return res.status(201).json(patient);
     }
 
     async getAll(req, res){
         const patients = await Patient.findAll();
-
+        
         return res.json(patients);
     }
 
